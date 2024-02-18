@@ -1,0 +1,14 @@
+C:\Users\Blaskowitz\source\repos\pks1\pks1\bin\Debug\net8.0\pks1.exe
+C:\Users\Blaskowitz\source\repos\pks1\pks1\bin\Debug\net8.0\pks1.deps.json
+C:\Users\Blaskowitz\source\repos\pks1\pks1\bin\Debug\net8.0\pks1.runtimeconfig.json
+C:\Users\Blaskowitz\source\repos\pks1\pks1\bin\Debug\net8.0\pks1.dll
+C:\Users\Blaskowitz\source\repos\pks1\pks1\bin\Debug\net8.0\pks1.pdb
+C:\Users\Blaskowitz\source\repos\pks1\pks1\obj\Debug\net8.0\pks1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Blaskowitz\source\repos\pks1\pks1\obj\Debug\net8.0\pks1.AssemblyInfoInputs.cache
+C:\Users\Blaskowitz\source\repos\pks1\pks1\obj\Debug\net8.0\pks1.AssemblyInfo.cs
+C:\Users\Blaskowitz\source\repos\pks1\pks1\obj\Debug\net8.0\pks1.csproj.CoreCompileInputs.cache
+C:\Users\Blaskowitz\source\repos\pks1\pks1\obj\Debug\net8.0\pks1.dll
+C:\Users\Blaskowitz\source\repos\pks1\pks1\obj\Debug\net8.0\refint\pks1.dll
+C:\Users\Blaskowitz\source\repos\pks1\pks1\obj\Debug\net8.0\pks1.pdb
+C:\Users\Blaskowitz\source\repos\pks1\pks1\obj\Debug\net8.0\pks1.genruntimeconfig.cache
+C:\Users\Blaskowitz\source\repos\pks1\pks1\obj\Debug\net8.0\ref\pks1.dll

@@ -1,0 +1,197 @@
+{
+  "students": [
+    {
+      "name": "Oleksei",
+      "surname": "Shevcov",
+      "middle_name": "Gnomovich",
+      "code": "1487D"
+    },
+    {
+      "name": "Danila",
+      "surname": "Gulyaev",
+      "middle_name": "Goevich",
+      "code": "1489D"
+    },
+    {
+      "name": "Dmitriy",
+      "surname": "Grishin",
+      "middle_name": "Subbotniyvor",
+      "code": "1490D"
+    },
+    {
+      "name": "Sergei",
+      "surname": "Bozhenkov",
+      "middle_name": "Mikhaylovich",
+      "code": "1491D"
+    },
+    {
+      "name": "Maksim",
+      "surname": "Goi",
+      "middle_name": "Goevich",
+      "code": "1492D"
+    }
+  ],
+  "subjects": [
+    {
+      "title": "Math_Analysis",
+      "code": "1589S",
+      "lectures_h": "168",
+      "practice_h": "168"
+    },
+    {
+      "title": "Linear_Algebra",
+      "code": "1590S",
+      "lectures_h": "168",
+      "practice_h": "168"
+    },
+    {
+      "title": "Discret_math",
+      "code": "1591S",
+      "lectures_h": "168",
+      "practice_h": "168"
+    },
+    {
+      "title": "Frontend_development",
+      "code": "1592S",
+      "lectures_h": "168",
+      "practice_h": "168"
+    },
+    {
+      "title": "Big_data",
+      "code": "1593S",
+      "lectures_h": "168",
+      "practice_h": "168"
+    }
+  ],
+  "marks": [
+    {
+      "student_code": "1487D",
+      "subject_code": "1589S",
+      "mark": 2
+    },
+    {
+      "student_code": "1487D",
+      "subject_code": "1590S",
+      "mark": 3
+    },
+    {
+      "student_code": "1487D",
+      "subject_code": "1591S",
+      "mark": 3
+    },
+    {
+      "student_code": "1487D",
+      "subject_code": "1592S",
+      "mark": 2
+    },
+    {
+      "student_code": "1487D",
+      "subject_code": "1593S",
+      "mark": 4
+    },
+    {
+      "student_code": "1489D",
+      "subject_code": "1589S",
+      "mark": 5
+    },
+    {
+      "student_code": "1489D",
+      "subject_code": "1590S",
+      "mark": 3
+    },
+    {
+      "student_code": "1489D",
+      "subject_code": "1591S",
+      "mark": 4
+    },
+    {
+      "student_code": "1489D",
+      "subject_code": "1592S",
+      "mark": 2
+    },
+    {
+      "student_code": "1489D",
+      "subject_code": "1593S",
+      "mark": 2
+    },
+    {
+      "student_code": "1490D",
+      "subject_code": "1589S",
+      "mark": 2
+    },
+    {
+      "student_code": "1490D",
+      "subject_code": "1590S",
+      "mark": 5
+    },
+    {
+      "student_code": "1490D",
+      "subject_code": "1591S",
+      "mark": 3
+    },
+    {
+      "student_code": "1490D",
+      "subject_code": "1592S",
+      "mark": 2
+    },
+    {
+      "student_code": "1490D",
+      "subject_code": "1593S",
+      "mark": 4
+    },
+    {
+      "student_code": "1491D",
+      "subject_code": "1589S",
+      "mark": 4
+    },
+    {
+      "student_code": "1491D",
+      "subject_code": "1590S",
+      "mark": 3
+    },
+    {
+      "student_code": "1491D",
+      "subject_code": "1591S",
+      "mark": 3
+    },
+    {
+      "student_code": "1491D",
+      "subject_code": "1592S",
+      "mark": 5
+    },
+    {
+      "student_code": "1491D",
+      "subject_code": "1593S",
+      "mark": 4
+    },
+    {
+      "student_code": "1492D",
+      "subject_code": "1589S",
+      "mark": 3
+    },
+    {
+      "student_code": "1492D",
+      "subject_code": "1590S",
+      "mark": 3
+    },
+    {
+      "student_code": "1492D",
+      "subject_code": "1591S",
+      "mark": 4
+    },
+    {
+      "student_code": "1492D",
+      "subject_code": "1592S",
+      "mark": 5
+    },
+    {
+      "student_code": "1492D",
+      "subject_code": "1593S",
+      "mark": 4
+    }
+ 
+    
+  ]
+
+
+}
