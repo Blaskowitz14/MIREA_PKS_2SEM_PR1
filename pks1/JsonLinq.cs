@@ -12,65 +12,68 @@
     public ObjectLists json_deserialize(string file_adress) {
         FileStream fileStream = new FileStream(file_adress, FileMode.Open);
         ObjectLists? list1 = JsonSerializer.Deserialize<ObjectLists>(fileStream);
+        fileStream.Close();
         return list1;
     }
     public void json_serialize() {
-        FileStream fileStream = new FileStream(file_adress, FileMode.Open);
+        FileStream fileStream = new FileStream(file_adress, FileMode.Truncate);
         JsonSerializer.Serialize<ObjectLists>(fileStream, list);
+        fileStream.Close();
     }
-    public List<Mark> get_student_marks(string student_code) {
-        var marks_list = from variable in list.marks
-                        where variable.student_code == student_code
-                        select variable;
-        List<Mark> marks_list1 = marks_list.ToList();
-        return marks_list1;
+    public List<ResultLinq> get_student_marks(string student_code) {
+        var list1 = from variable in list.marks
+                         from subj in list.subjects
+                         where variable.student_code == student_code
+                         where variable.subject_code == subj.code
+                         select new 
+                         {
+                             subj.title,
+                             variable.mark
+                         };
+        List<ResultLinq> result = new List<ResultLinq>(1);
+        foreach (var subj in list1)
+        {
+            ResultLinq obj = new ResultLinq(subj.title, subj.mark);
+            result.Add(obj);
+        }
+        return result;
     }
 
-    public void print_student_statistics(List<Mark> marks) {
-        int grade_two_quantity = 0;
-        int grade_three_quantity = 0;
-        int grade_four_quantity = 0;
-        int grade_five_quantity = 0;
-        float grade_two_frequency = 0;
-        float grade_three_frequency = 0;
-        float grade_four_frequency = 0;
-        float grade_five_frequency = 0;
-        int grades_total_quantity = marks.Count();
+    public void print_student_statistics(List<ResultLinq> list) {
+        List<float> grades = new List<float>(5) { 0, 0, 0, 0, 0 };
+        float total_grades_ammount = list.Count();
 
-        foreach (Mark mark in marks) {
-            switch (mark.mark) {
+        foreach (ResultLinq obj in list) {
+            Console.WriteLine($"Предмет: {obj.subject_name} Оценка: {obj.mark}");
+            switch (obj.mark) {
                 case 2:
-                    ++grade_two_quantity;
+                    grades[0]++;
                     break;
                 case 3:
-                    ++grade_three_quantity;
+                    grades[1]++;
                     break;
                 case 4:
-                    ++grade_four_quantity;
+                    grades[2]++;
                     break;
                 case 5:
-                    ++grade_five_quantity;
+                    grades[3]++;
                     break;
-
             }
         }
-
-        grade_two_frequency = grade_two_quantity / grades_total_quantity;
-        grade_three_frequency = grade_three_quantity / grades_total_quantity;
-        grade_four_frequency = grade_four_quantity / grades_total_quantity;
-        grade_five_frequency = grade_five_quantity / grades_total_quantity;
-
-        Console.WriteLine($"Количество оценок 5: {grade_five_quantity} \nКоличестов оценок 4: {grade_four_quantity} \nКоличество оценок 3: {grade_three_quantity} \nКоличество оценок 2: {grade_two_quantity}");
-        Console.WriteLine(&"")
-
-
-
+        Console.WriteLine("Процент оценок:");
+        for (int i = 0; i < 4; i++) {
+            if (grades[i] > 0) {
+                Console.WriteLine($"{i + 2}: {(grades[i] / total_grades_ammount) * 100}%");
+            }
+            else { Console.WriteLine($"{i + 2}: 0%"); }
+        }
     }
 
     public void add_mark(string student_code, string subject_code, int mark) {
         Mark new_mark = new Mark(student_code, subject_code, mark);
         list.marks.Add(new_mark);
         json_serialize();
+        json_deserialize(file_adress);
     }
 }
 

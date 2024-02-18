@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Blaskowitz\\source\\repos\\pks1\\pks1\\pks1.csproj",
+      "projectUniqueName": "C:\\Users\\Blaskowitz\\source\\repos\\pks_sem2_pr1\\MIREA_PKS_2SEM_PR1\\pks1\\pks1.csproj",
       "projectName": "pks1",
-      "projectPath": "C:\\Users\\Blaskowitz\\source\\repos\\pks1\\pks1\\pks1.csproj",
+      "projectPath": "C:\\Users\\Blaskowitz\\source\\repos\\pks_sem2_pr1\\MIREA_PKS_2SEM_PR1\\pks1\\pks1.csproj",
       "packagesPath": "C:\\Users\\Blaskowitz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Blaskowitz\\source\\repos\\pks1\\pks1\\obj\\",
+      "outputPath": "C:\\Users\\Blaskowitz\\source\\repos\\pks_sem2_pr1\\MIREA_PKS_2SEM_PR1\\pks1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,7 +33,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -67,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

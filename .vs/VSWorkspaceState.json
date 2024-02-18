@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\pks1"
   ],
-  "SelectedNode": "\\pks1.sln",
+  "SelectedNode": "\\pks1\\JsonLinq.cs",
   "PreviewInSolutionExplorer": false
 }
